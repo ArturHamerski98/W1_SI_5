@@ -4,7 +4,7 @@
 
 #pragma warning(disable: 4996)
 
-char KEYWORD[] = "CODE";
+char KEYWORD[4] = "CODE";
 char emptyWord[] = "";
 
 void createEmptyWord() {
@@ -61,9 +61,9 @@ int checkAnswer(char playerWord[]) {
 
 int main() {
     createEmptyWord();
-    char goodLetters[] = "";
-    char badLetters[] = "";
-    char playerWord[] = "";
+    char goodLetters[30] = "";
+    char badLetters[30] = "";
+    char playerWord[30] = "";
     printf("The code word has %d letters - guess it!\n", (int)strlen(KEYWORD));
 
     for (int i = 0; i < 7; i++) {
