@@ -69,7 +69,7 @@ int main() {
     for (int i = 0; i < 7; i++) {
         printf("It's youre %d attempt. Word: %s Good letters: %s"
             " Bad letters:%s \nGuess word:", i + 1, emptyWord, goodLetters, badLetters);
-        fgets(playerWord, 256, stdin);
+        fgets(playerWord, 30, stdin);
         makeUpperCase(playerWord);
         checkLetters(goodLetters, badLetters, playerWord);
         if (checkAnswer(playerWord) == 1) {
